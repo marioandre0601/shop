@@ -1,0 +1,32 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+#header-container{
+    background-color: #99c84a;
+    color: white;
+}
+#header-container .loggin,
+#header-container .navbar-toggler{
+    color: white;
+}
+#menu-container{
+    background-color: #f7f7f9;
+}
+.btn.btn-shop{
+    background-color: #99c84a;
+    color: white;
+}
+.btn.btn-shop:hover{
+    background-color: #8ab542;
+    color: white;
+}
+input.form-control:focus{
+    border-color: #99c84a;
+}
+#search-bar{
+    padding: 1em;
+}
+#productsCarousel img {
+    display: block;
+    margin: 0 auto;
+}
