@@ -1,7 +1,8 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-#header-container{
+#header-container,
+#info-container{
     background-color: #99c84a;
     color: white;
 }
@@ -29,4 +30,26 @@ input.form-control:focus{
 #productsCarousel img {
     display: block;
     margin: 0 auto;
+}
+#info-container h4 {
+    margin: 1em 0;
+}
+#info-container img{
+    margin: 0 auto;
+}
+#footer-container{
+    background-color: #1c3643;
+    color: white;
+    padding: 3em 0;
+}
+#footer-container h4{
+    font-size: 16px;
+}
+#footer-container .nav-link {
+    color: white;
+}
+@media (max-width: 768px) {
+    #footer-container [class*="col-"]{
+        margin-bottom: 2em;
+    }
 }
