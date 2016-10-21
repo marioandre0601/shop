@@ -39,10 +39,10 @@
             <div class="row">
                 <div class="col-xs-12 offset-sm-2 col-md-4 offset-md-0 ">
                     <ul class="nav navbar-nav ">
-                        <li class="nav-item active text-xs-center">
+                        <li class="nav-item  text-xs-center">
                             <a href="index.html" class="nav-link">Home</a>
                         </li>
-                        <li class="nav-item text-xs-center">
+                        <li class="nav-item active text-xs-center">
                             <a href="catalogo.html" class="nav-link">Catalogo</a>
                         </li>
                         <li class="nav-item text-xs-center">
@@ -89,6 +89,78 @@
 </div>
 <!--/Menu-->
 
+<!--breadcrumbs-->
+<section id="breadcrumbs-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs">
+                <nav class="breadcrumb">
+                    <a href="index.html" class="breadcrumb-item">MRshop</a>
+                    <a href="catalogo.html" class="breadcrumb-item">Catalogo</a>
+                    <span class="breadcrumb-item active">Todo los productos</span>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!--breadcrumbs-->
+
+<!--productos-->
+<section id="productos-container">
+    <div class="container">
+        <div class="row">
+            <!--filas-->
+            <div class="col-xs-12 col-md-4 col-lg-3">
+                <div id="filtros-container">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active">
+                            <h5 class="list-group-item-heading">Categoria</h5>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            Ropa<span class="tag tag-pill tag-default pull-right">174</span></a>
+                        <a href="#" class="list-group-item list-group-item-action">Tecnologia
+                        <span class="tag tag-pill tag-default pull-right">11</span></a>
+                        <a href="#" class="list-group-item list-group-item-action">asdada
+                        <span class="tag tag-pill tag-default pull-right">221</span></a>
+                    </div>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active">
+                            <h5 class="list-group-item-heading">Color</h5>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-success">
+                            Verde<span class="tag tag-pill tag-default pull-right">12</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+                            Rojo<span class="tag tag-pill tag-default pull-right">12</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-warning">
+                            Amarillo <span class="tag tag-pill tag-default pull-right">213</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-info">
+                         Azul <span class="tag tag-pill tag-default pull-right">21</span>
+                        </a>
+                    </div>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active">
+                            <h5 class="list-group-item-heading">Sexo</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--filas-->
+
+
+            <!--productos-->
+            <div class="col-xs-12 col-md-9">
+                Productos
+            </div>
+            <!--productos-->
+        </div>
+    </div>
+
+</section>
+<!--productos-->
+
 <!--footer-->
 <footer id="footer-container">
     <div class="container">
@@ -131,11 +203,36 @@
 </footer>
 <!--footer-->
 
+<!--modal-->
+<div class="modal fade" id="modalOferta">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times-circle-o"></i></button>
+                <h4 class="modal-title">Oferta exclusiva</h4>
+            </div>
+            <div class="modal-body">
+                Registrate hoy y recibe $15 de descuento!
+                <form action="#" class="form">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email2" name="email2" placeholder="tu@correo.com">
+                        <small class="form-text text-muted">No compartiremos tu informacion con nadie más</small>
+                    </div>
+                    <button type="submit" class="btn btn-shop form-text">Registrate</button>
+                    <button id="noRegistrar" type="submit" class="btn btn-warning form-text" data-dismiss="modal">No, no quiero el descuento</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--modal-->
+
 
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
 <script src="js/app.js"> </script>
+<script>mostrarModal()</script>
 </body>
 </html>
