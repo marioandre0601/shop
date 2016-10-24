@@ -77,9 +77,17 @@ input.form-control:focus{
     margin-top: 1em;
 }
 @media (max-width: 768px) {
-  #productos-container .filtros-toggle{
-      margin-bottom: 1em;
+  .listado-productos{
+      margin-top: 2em;
   }
+}
+#paginator-container .page-item:not(.active):not(.disabled) .page-link{
+    color: #99c84a;
+}
+#paginator-container .page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover{
+    background-color: #99c84a;
+    border-color: #99c84a;
+    color: white;
 }
 
 
